@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takımımız</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--Bootstrap css linki-->
+
+<link rel="stylesheet" href="css/Anasayfa.css"> <!--css linki-->
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--ikon kullanımı için cdn linki-->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  <!--Font linki-->
+
+
+</head>
+<body class="bg-dark">
+    
+    <div class="navbar  navbar-expand-sm bg-black">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand ms-3 ">
+                <img src="images/darth vader.webp" alt="darth-vader" class="img-fluid img-thumbnail
+ rounded-circle" style="width: 3rem; height: 3rem;">
+            </a>
+
+
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#nContent"
+                aria-expanded="false" aria-label="menüyü açma kapama">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-xl-end justify-content-md-center" id="nContent">
+                <ul class="navbar-nav column-gap-2 me-1">
+                    <li class="nav-item"><a href="Anasayfa.html" class="nav-link text-white">ANASAYFA</a></li>
+                    <li class="nav-item"><a href="Özgeçmiş.html" class="nav-link text-white">ÖZGEÇMİŞ</a></li>
+                    <li class="nav-item"><a href="Şehrim.html" class="nav-link text-white">ŞEHRİM</a></li>
+                    <li class="nav-item"><a href="Takımımız.html" class="nav-link text-white">TAKIMIMIZ</a></li>
+                    <li class="nav-item"><a href="Api.html" class="nav-link text-white">API</a></li>
+                    <li class="nav-item"><a href="Login.html" class="nav-link text-white">LOGİN</a></li>
+                    <li class="nav-item"><a href="İletişim.html" class="nav-link text-white">İLETİŞİM</a></li>
+                </ul><!--Ul end-->
+            </div><!--Collapse end-->
+        </div> <!--container-fluid end-->
+    </div> <!--Navbar end-->
+    
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <div class="carousel slide" id="mySlide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="ilk slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="1" aria-current="true"
+                            aria-label="ikinci slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="2" aria-current="true"
+                            aria-label="üçüncü slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="3" aria-current="true"
+                            aria-label="dördüncü slayt"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-bs-interval="1500">
+                            <img src="images/fenerbahçe.jpg" alt="slide 1" class="d-block w-100 rounded-3 "
+                                id="slide-ayasofya" height="600px">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="1500">
+                            <img src="images/fenerbahce-adanademir.webp2.webp" alt="slide 2" class="d-block w-100 rounded-3 "
+                                id="slide-galatakulesi" height="600px">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="1500">
+                            <img src="images/fenerbahçe3.jpg" alt="slide 3" class="d-block w-100 rounded-3  "
+                                id="slide-kızkulesi" height="600px">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="1500">
+                            <img src="images/fenerbahçe4.jpg" alt="slide 4"
+                                id="slide-yerebatansarnici" class="d-block w-100 rounded-3 " height="600px">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                        </div>
+
+                    </div><!--Carousel-inner end-->
+                    <button type="button" class="carousel-control-prev" data-bs-target="#mySlide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#mySlide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+
+                </div><!--Carousel-slide end-->
+            </div><!--Col end-->
+        </div><!--Row end-->
+    </div><!--Container end-->
+
+
+    <div class="container mt-3">
+        <div class="row">
+        
+            <div class="col text-white">
+                <h1 class="text-center">FENERBAHÇE</h1>
+                1895 yılında Moda’da oturan İngilizlerin modern futbolu oynamaya başlamaları, Fenerbahçe Spor Kulübü’nün kurulmasının ilk adımları olacaktı. Deniz öğrencisi Fuat Hüsnü Kayacan’ın, 1899 yılında Fenerbahçe Stadı’nın bulunduğu çayırda meşin yuvarlağa yaptığı vuruşlar sırasında arkadaşları Reşat Denyal, Mehmet Ali ile dile getirdikleri "Ah biz de bir futbol takımı kurup oynayabilsek" özlemi, Türk gençleri arasında Black Stockings FC kurulmasına sebep olmuştur. Fakat daha sonra, kulüp monarşi rejiminin engellenmesini önlemek amacıyla hemen dağıtılmıştır.
+
+                Birkaç gencin de katılımıyla aynı isimler, 1902 senesinde bu kez Kadıköy Futbol Kulübü adı altında toplandılar. Ancak daha sert hafiye baskını bu girişimi de engellemiştir. 1907 yılının bir bahar gününde gene bir maç dönüşü Ziya, Ayetullah ve Necip evlerinde çay içerlerken sönmeyen ideallerini bir kez daha başarmaya yöneldiler. Monarşi rejimi artık gevşemiş ve bu girişim bu kez tutunmuş ve FENERBAHÇE FUTBOL KULÜBÜ bir daha kapatılmamak üzere kurulmuştur.
+                
+                Fenerbahçe Futbol Kulübü’nün ilk yönetim kurulu şöyledir: Ziya Bey "Başkan", Ayetullah Bey "Genel Sekreter" ve Necip Bey de "Genel Kaptan ve Veznedar"dır. Tabii kuruluş yılları kolay olmamış, zaman zaman futbolcu bulmakta zorlanılmış ve birçok defa gemilerden ödünç futbolcu alarak ligdeki mücadelesini sürdürülmüştür. 1909 yılında kulübün adı Fenerbahçe Spor Kulübü olarak değişmiş, renkleri de sarı-beyazdan bugünkü rengi olan sarı-laciverde çevrilmiştir. 1909-1911 yılları Fenerbahçe’miz için çok zor geçmiş bir ara dağılma noktasına bile gelinmiş ancak Elkatipzade Mustafa adlı üye, kulübü kurtaran adam olmuştur.
+                
+                Lokali dahi olmayan kulübün takımları çok kötü durumdayken St. Joseph, Robert College ve Kadıköy Numune Mektebi’nden toplanılan genç futbolcularla, kulübün genç takımları kurulmuş, bir nevi alt yapısını oluşturulmuştur. Bu atılım, başarısız geçen 2 yılın ardından Fenerbahçe’ye hiç yenilmeden ilk şampiyonluğunu getirmiştir.
+                
+                Bu şampiyonluk ise, Fenerbahçe’ye yaşama gücü aşılamış ve kulüp Altıyol ağzında 2 odalı bir lokale kavuşmuştur. Balkan Savaşı nedeni ile yapılmayan 1912-1913 lig maçlarından sonra üst üste ve yenilmeden kazanılan 2 şampiyonluk, Fenerbahçe camiasını oluşturmaya başlamıştır. Fenerbahçemiz aynı zamanda 1914 senesinde tertiplenen Genç takımlar şampiyonluğunu da kazanmış ve 10 yıl içinde en çok şampiyonluk kazanmış takım olma unvanını alarak İngilizler tarafından verilen tarihsel şilti de almaya hak kazanmıştır.div><!--Col end-->
+        </div><!--Row end-->
+    </div><!--Container end-->
+
+
+    <div class="container mt-3">
+        <h1 class="text-white text-center mb-5"> TAKIMIN EFSANE OYUNCULARI</h1>
+        <div class="row row-cols-sm-2  row-cols-md-5 gy-5">
+          
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/alex.jpg" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">ALEX DE SOUZA</h5>
+                        <p class="card-text">10
+                            <p><b>TAKIMIN KAPTANI</b></p>
+                        </p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/baroni.jpg" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">BARONİ</h5>
+                        <p class="card-text">16</p>
+                        <p class="mark">BREZİLYALI ORTA SAHA</p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/ferdi.jpeg" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">FERDİ KADIOĞLU</h5>
+                        <p class="card-text">7</p>
+                        <p><b>JOKER</b></p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/volkan.jpg_large" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">VOLKAN DEMİREL</h5>
+                        <p class="card-text">1</p>
+                        <p><b>EN İYİ TÜRK KALECİ</b></p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/lugano.jpg" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">LUGANO</h5>
+                        <p class="card-text">2</p>
+                        <p><b>STOPER</b></p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+
+            
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/sow.jpg" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">SOW</h5>
+                        <p class="card-text">7</p>
+                        <p><b>FORVET</b></p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/appiah.jpeg" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">APPİAH</h5>
+                        <p class="card-text">4</p>
+                        <p><b>LİBERO</b></p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener " style="width: 12rem;">
+                    <img src="images/meireles.jpg" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">MEİRELES</h5>
+                        <p class="card-text">14</p>
+                        <p><b>ORTA SAHA</b></p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/stoch.jpg" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">STOCH</h5>
+                        <p class="card-text">99</p>
+                        <p><b>FORVET</b></p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+
+            <div class="col">
+                <div class="card bg-black h-100 text-center cardfener" style="width: 12rem;">
+                    <img src="images/goat.jpg_large" alt="fenerbahce" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">GOAT</h5>
+                        <p class="card-text">19</p>
+                        <strong>FORVET</strong>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+
+
+        </div><!-- Row end-->
+    </div><!-- Container end-->
+
+
+    
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script> <!--Bootstrap js linki-->
+</body>
+</html>
