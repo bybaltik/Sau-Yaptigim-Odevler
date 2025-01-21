@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehrim</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap css linki-->
+
+    <link rel="stylesheet" href="css/Anasayfa.css"> <!--css linki-->
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--ikon kullanımı için cdn linki-->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"> <!--Font linki-->
+</head>
+
+<body class="bg-dark">
+
+
+    <div class="navbar  navbar-expand-sm bg-black">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand ms-3 ">
+                <img src="images/darth vader.webp" alt="darth-vader" class="img-fluid img-thumbnail
+ rounded-circle" style="width: 3rem; height: 3rem;">
+            </a>
+
+
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#nContent"
+                aria-expanded="false" aria-label="menüyü açma kapama">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-xl-end justify-content-md-center" id="nContent">
+                <ul class="navbar-nav column-gap-2 me-1">
+                    <li class="nav-item"><a href="Anasayfa.html" class="nav-link text-white">ANASAYFA</a></li>
+                    <li class="nav-item"><a href="Özgeçmiş.html" class="nav-link text-white">ÖZGEÇMİŞ</a></li>
+                    <li class="nav-item"><a href="Şehrim.html" class="nav-link text-white">ŞEHRİM</a></li>
+                    <li class="nav-item"><a href="Takımımız.html" class="nav-link text-white">TAKIMIMIZ</a></li>
+                    <li class="nav-item"><a href="Api.html" class="nav-link text-white">API</a></li>
+                    <li class="nav-item"><a href="Login.html" class="nav-link text-white">LOGİN</a></li>
+                    <li class="nav-item"><a href="İletişim.html" class="nav-link text-white">İLETİŞİM</a></li>
+                </ul><!--Ul end-->
+            </div><!--Collapse end-->
+        </div> <!--container-fluid end-->
+    </div> <!--Navbar end-->
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <div class="carousel slide" id="mySlide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="ilk slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="1" aria-current="true"
+                            aria-label="ikinci slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="2" aria-current="true"
+                            aria-label="üçüncü slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="3" aria-current="true"
+                            aria-label="dördüncü slayt"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-bs-interval="1500">
+                            <img src="images/ayasofya.jpg" alt="slide 1" class="d-block w-100 rounded-3 "
+                                id="slide-ayasofya" height="600px">
+                            <div class="carousel-caption">
+                                <h5>-AYASOFYA-</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="1500">
+                            <img src="images/Galata-Kulesi.jpg" alt="slide 2" class="d-block w-100 rounded-3 "
+                                id="slide-galatakulesi" height="600px">
+                            <div class="carousel-caption">
+                                <h5>-GALATA KULESİ-</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="1500">
+                            <img src="images/kız kulesi.webp" alt="slide 3" class="d-block w-100 rounded-3  "
+                                id="slide-kızkulesi" height="600px">
+                            <div class="carousel-caption">
+                                <h5>-KIZ KULESİ-</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="1500">
+                            <img src="images/yerebatan-sarnici-yeni-hali-biletino-blog-13442.jpg" alt="slide 4"
+                                id="slide-yerebatansarnici" class="d-block w-100 rounded-3 " height="600px">
+                            <div class="carousel-caption">
+                                <h5>-YEREBATAN SARNICI-</h5>
+                            </div>
+                        </div>
+
+                    </div><!--Carousel-inner end-->
+                    <button type="button" class="carousel-control-prev" data-bs-target="#mySlide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#mySlide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+
+                </div><!--Carousel-slide end-->
+            </div><!--Col end-->
+        </div><!--Row end-->
+    </div><!--Container end-->
+
+
+
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-5">
+                <img src="images/istanbul.jpg" alt="istanbul" class="img-fluid rounded-2">
+            </div>
+            <div class="col-6 text-white">İstanbul, tarihi ve modern dokuların buluştuğu benzersiz bir şehirdir.
+                Binlerce yıllık geçmişiyle, bir zamanlar Bizans ve Osmanlı İmparatorluklarının başkenti olan bu şehir,
+                dünya üzerinde eşine az rastlanır bir tarihi mirasa sahiptir. Boğaziçi'nin iki yakasında yer alan
+                İstanbul, Avrupa ve Asya kıtalarını birbirine bağlayan köprülerle hem coğrafi hem de kültürel olarak bir
+                köprü vazifesi görür.<br>
+                Türkiye İstatistik Kurumu'nun (TÜİK) hazırlamış olduğu 2023 yılı Adrese Dayalı Nüfus Kayıt Sistemi (ADNKS) sonuçlarına göre İstanbul'un (İstanbul Büyükşehir Belediyesi ve bağlı belediyelerin sınırları içindeki nüfus) toplam nüfusu 15 milyon 655 bin 924 kişidir.
+            </div>
+        </div><!--Row end-->
+    </div><!--Container end-->
+
+
+
+
+    <div class="container mb-3  " style="margin-top: 150px;">
+
+        <div class="row row-cols-sm-2 row-cols-xl-4  gy-3">
+            <div class="col">
+                <div class="card bg-black  hedef1 h-100 text-center" style="width: 25;" id="card-ayasofya">
+                    <img src="images/ayasofya.jpg" alt="ayasofyas" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">AYASOFYA</h5>
+                        <p>Ayasofya aynı yere üç kez inşa edilmiş bir eserdir. Günümüzdeki Ayasofya “Üçüncü Ayasofya”
+                            olarak bilinmektedir. Ayasofya’nın ilk inşaatı Hıristiyanlığı Roma İmparatorluğu’nun resmi
+                            dini olarak kabul eden I. Konstantin döneminde başlatılmıştır. İstanbul’un yedi tepesinden
+                            birincisi üzerinde ahşap çatılı bir bazilika olarak inşa edilen ve o dönemde ‘Büyük Kilise’
+                            ismiyle anılan bu yapının açılışı, 360 yılında II. Konstantin döneminde gerçekleşmiştir. 404
+                            yılında başlayan isyanda çıkan bir yangın neticesinde büyük ölçüde harap olan bu yapıdan
+                            günümüze ulaşan bir kalıntı bulunmamaktadır. Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Molestiae dolore harum iure similique ipsa ea ratione nisi nostrum eveniet
+                            perferendis? Sed maiores ab repellendus libero error sunt molestiae hic alias.</p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+
+            <div class="col">
+                <div class="card bg-black  h-100 text-center" style="width: 25;" id="card-galatakulesi">
+                    <img src="images/Galata-Kulesi.jpg" alt="galata kulesi" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">GALATA KULESİ</h5>
+                        <p>Galata Kulesi, Bizans İmparatorluğu döneminde, Galata semtinin Ceneviz kolonisi olduğu on
+                            dördüncü yüzyıl ortalarında, Cenevizliler tarafından, Galata surlarının bir parçası olarak
+                            inşa edilmiştir. Osmanlı döneminde bir süre zindan olarak kullanıldıktan sonra, yangın
+                            gözetleme kulesine çevrilmiştir. Zaman zaman deprem ve yangınlarla tahrip olan kule, Osmanlı
+                            döneminde birkaç kez tadilat geçirmiştir. 1960’lı yıllara gelindiğinde bir hayli harap
+                            durumda olan kule, İstanbul Belediyesi tarafından restore edilerek ziyarete açılmıştır.
+                            Galata Kulesi 2020 yılında Vakıflar Genel Müdürlüğü tarafından yeniden restore edilmiş,
+                            sonradan eklenen betonarme unsurlar ve kafeterya kaldırılarak, müze işleviyle kapılarını
+                            ziyaretçilere yeniden açmıştır.
+
+                            Galata Kulesi müzesinde, tarihöncesi dönemlerden itibaren yerleşime sahne olan ve üç büyük
+                            imparatorluğa, yaklaşık on altı yüzyıl boyunca başkentlik yapan İstanbul’un tüm dönemlerini
+                            yansıtan eserler sergilenmektedir.</p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+
+
+
+            <div class="col">
+                <div class="card bg-black  h-100 text-center" style="width: 25;" id="card-kızkulesi">
+                    <img src="images/kız kulesi.webp" alt="kız kulesi" class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">KIZ KULESİ</h5>
+                        <p>Geçmişi 2500 yıl öncesine dayanan bu eşsiz yapı, İstanbul'un tarihine eş bir tarih yaşamış ve
+                            bu kentin yaşadıklarına görgü şahitliği yapmıştır. Antik çağda başlayan geçmişiyle, Eski
+                            Yunan'dan Bizans İmparatorluğu'na, Bizans'tan Osmanlı'ya, tüm tarihi dönemlerde var olarak
+                            günümüze kadar gelmiştir.
+
+                            Tarihi kanıtlara baktığımızda kuleden ilk olarak M.Ö. 410 yılında söz edildiğini görüyoruz.
+                            Atinalı komutan Alkibiades tarafından inşa edilen kule, Boğaz’dan geçen gemileri kontrol
+                            etmek ve vergi almak amacı ile kullanılıyormuş. İstanbul, Roma hakimiyetine geçtikten sonra
+                            Bizans İmparatoru Manuel Comnenos yapıyı taşlarla güçlendirip tam bir kule olarak
+                            tasarlatmış ve bir savunma binası haline getirmiş. Osmanlı zamanında bir kez daha restore
+                            edilen kule, mehter takımının gösterilerine sahne olmuş. Kulenin bugünkü temelleri ve alt
+                            katın önemli kısımları Fatih Sultan Mehmet zamanında yapılmıştır.
+
+                            Tarihi boyunca birçok kez harap olup tekrar restore edilen Kız Kulesi, 1998 yılında başlayan
+                            restorasyon çalışmalarının ardından 2000 yılında turizme açıldı. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. </p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+
+            <div class="col">
+                <div class="card bg-black  h-100 text-center" style="width: 25;" id="card-yerebatansarnici">
+                    <img src="images/yerebatan-sarnici-yeni-hali-biletino-blog-13442.jpg" alt="ayasofyas"
+                        class="card-img-top">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">YEREBATAN SARNICI</h5>
+                        <p>Yerebatan Sarnıcı Müzesi, görkemli İstanbul tarihinin izlerini sürebileceğimiz en önemli
+                            kültür varlıklarının başında gelmektedir. Doğu Roma İmparatoru I. Justinianus (527-565)
+                            tarafından yaptırılan bu büyük yer altı sarnıcı, suyun içinden yükselen ve sayısız gibi
+                            görülen mermer sütunlar sebebiyle halk arasında “Yerebatan Sarayı” olarak
+                            isimlendirilmiştir. Latincede “Cisterna Basilica” olarak adlandırılan yapının bulunduğu
+                            yerde daha önceleri Stoa Bazilikası bulunduğundan, kimilerince “Bazilika Sarnıcı” olarak da
+                            anılmaktadır.
+
+                            80.000 ton su depolama kapasitesiyle şehrin en büyük kapalı sarnıcı olan ve diğer kapalı
+                            sarnıçlardan daha fazla devşirme taşıyıcı elemana sahip olmasıyla dikkat çeken Yerebatan
+                            Sarnıcı; yaklaşık 10.000 m2 alanı kaplayan; uzunluğu 140 metre, genişliği 70 metre olan
+                            dikdörtgen biçimli devasa bir yapıdır.
+
+                            Yazılı kaynaklara göre suyollarından ve yağmurdan elde edilen suyu, imparatorların ikamet
+                            ettiği Büyük Saray ve çevresindeki yapılara dağıtarak yüzlerce yıl şehrin su ihtiyacını
+                            karşılayan Yerebatan Sarnıcı’na, tarihi suyollarından biri olan Hadrianus İsale Hattı’ndan
+                            da su sağlanmıştır.
+
+                            Sarnıcın içerisinde her biri 9 metre yüksekliğinde 336 sütun bulunmaktadır. Birbirine 4.80
+                            metre aralıklarla dikilen bu sütunlar, 28 sütun içeren 12 sıra meydana getirmektedir.
+                            Çeşitli mermer cinslerinden yontulmuş sütunların büyük bir kısmı tek parçadan, bir kısmı da
+                            iki parçadan oluşmaktadır.
+
+
+
+                        </p>
+                    </div><!-- Card-body end-->
+                </div> <!-- Card end-->
+
+            </div><!-- Col end-->
+
+        </div> <!-- Row end-->
+
+    </div><!-- Container end-->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> <!--Bootstrap js linki-->
+    <!--Sliderdaki resme tıklayınca o resmin cardına gitmesi için-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Ayasofya resmine tıklama olayı ekle
+            var ayasofyaImage = document.getElementById('slide-ayasofya');
+            var ayasofyaCard = document.getElementById('card-ayasofya');
+
+            var galataImage = document.getElementById('slide-galatakulesi');
+            var galataCard = document.getElementById('card-galatakulesi');
+
+            var kızkulesiImage = document.getElementById('slide-kızkulesi');
+            var kızkulesiCard = document.getElementById('card-kızkulesi');
+
+            var yerebatansarniciImage = document.getElementById('slide-yerebatansarnici');
+            var yerebatansarniciCard = document.getElementById('card-yerebatansarnici');
+
+            ayasofyaImage.addEventListener('click', function () {
+                if (ayasofyaCard) {
+                    // Ayasofya kartına pürüzsüz bir şekilde (smooth scrolling) yönlendir
+                    ayasofyaCard.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+
+            galataImage.addEventListener('click', function () {
+                if (galataCard) {
+                    // Ayasofya kartına pürüzsüz bir şekilde (smooth scrolling) yönlendir
+                    galataCard.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+
+            kızkulesiImage.addEventListener('click', function () {
+                if (kızkulesiCard) {
+                    // Ayasofya kartına pürüzsüz bir şekilde (smooth scrolling) yönlendir
+                    kızkulesiCard.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+
+            yerebatansarniciImage.addEventListener('click', function () {
+                if (yerebatansarniciCard) {
+                    // Ayasofya kartına pürüzsüz bir şekilde (smooth scrolling) yönlendir
+                    yerebatansarniciCard.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+Yukarıdaki kod örneğinde:
+
+Ayasofya slider resmi için id="slide-ayasofya" attribute
+
+
+
+
+
+
+
+
+</body>
+
+</html>
