@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bbalt\\OneDrive\\Desktop\\SAU-VERI-YAPILARI-1.ODEVI-2023\\1.ODEV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{908514C5-5A65-4517-9E79-82970829B3DE}|1.ODEV\\1.ODEV.vcxproj|C:\\Users\\bbalt\\OneDrive\\Desktop\\SAU-VERI-YAPILARI-1.ODEVI-2023\\1.ODEV\\1.ODEV\\1.ODEV.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{908514C5-5A65-4517-9E79-82970829B3DE}|1.ODEV\\1.ODEV.vcxproj|solutionrelative:1.ODEV\\1.ODEV.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{908514C5-5A65-4517-9E79-82970829B3DE}|1.ODEV\\1.ODEV.vcxproj|C:\\Users\\bbalt\\OneDrive\\Desktop\\SAU-VERI-YAPILARI-1.ODEVI-2023\\1.ODEV\\1.ODEV\\sayilar.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{908514C5-5A65-4517-9E79-82970829B3DE}|1.ODEV\\1.ODEV.vcxproj|solutionrelative:1.ODEV\\sayilar.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sayilar.txt",
+              "DocumentMoniker": "C:\\Users\\bbalt\\OneDrive\\Desktop\\SAU-VERI-YAPILARI-1.ODEVI-2023\\1.ODEV\\1.ODEV\\sayilar.txt",
+              "RelativeDocumentMoniker": "1.ODEV\\sayilar.txt",
+              "ToolTip": "C:\\Users\\bbalt\\OneDrive\\Desktop\\SAU-VERI-YAPILARI-1.ODEVI-2023\\1.ODEV\\1.ODEV\\sayilar.txt",
+              "RelativeToolTip": "1.ODEV\\sayilar.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-26T16:14:20.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "1.ODEV.cpp",
+              "DocumentMoniker": "C:\\Users\\bbalt\\OneDrive\\Desktop\\SAU-VERI-YAPILARI-1.ODEVI-2023\\1.ODEV\\1.ODEV\\1.ODEV.cpp",
+              "RelativeDocumentMoniker": "1.ODEV\\1.ODEV.cpp",
+              "ToolTip": "C:\\Users\\bbalt\\OneDrive\\Desktop\\SAU-VERI-YAPILARI-1.ODEVI-2023\\1.ODEV\\1.ODEV\\1.ODEV.cpp",
+              "RelativeToolTip": "1.ODEV\\1.ODEV.cpp",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-26T16:08:54.476Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
