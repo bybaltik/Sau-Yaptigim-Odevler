@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "RolEkleme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Rol
+
+<form asp-action="RolEkleme" method="post">
+    <div class="form-group text-white">
+        <label asp-for="RolAdi">ROL ADİ:</label>
+        <input type="text" class="form-control" asp-for="RolAdi" />
+        <span class="text-danger" asp-validation-for="RolAdi"></span>
+    </div>
+
+
+    <div class="form-group pt-3">
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    </div>
+</form>

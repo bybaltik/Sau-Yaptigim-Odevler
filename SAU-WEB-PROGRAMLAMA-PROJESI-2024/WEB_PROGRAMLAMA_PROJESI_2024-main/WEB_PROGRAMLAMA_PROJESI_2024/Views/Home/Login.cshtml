@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container " style="margin-top:200px">
+    <div class="row">
+        <!-- Admin Panel -->
+        <div class="col-12 col-md-5 mx-auto mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <i class="fa-solid fa-user text-dark fs-1"></i>
+                        <p>ADMİN PANEL</p>
+                    </div>  
+                    <form method="post" action="/Home/Login">
+                        <div class="mb-3">
+                            <input type="text" name="username" class="form-control" placeholder="Kullanıcı Adı" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" name="password" class="form-control" placeholder="Password" required />
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary w-45">Login</button>
+                           
+                        </div>
+                    </form>
+                    <p class="text-danger text-center mt-2">@ViewBag.Error</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kullanıcı Panel -->
+        <div class="col-12 col-md-5 mx-auto mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <i class="fa-solid fa-user text-dark fs-1"></i>
+                        <p>KULLANICI PANEL</p>
+                    </div>
+                    <form method="post" action="/Home/RandevuEkleme">
+                        @Html.AntiForgeryToken()
+                        <div class="mb-3">
+                            <input type="text" name="username" class="form-control" placeholder="Email" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" name="password" class="form-control" placeholder="Password" required />
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary w-45">Login</button>
+                            <a href="/Home/MusteriEkleme" class="btn btn-secondary w-45">Kayıt Ol</a>
+                        </div>
+                    </form>
+                    <p class="text-danger text-center mt-2">@ViewBag.UserError</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

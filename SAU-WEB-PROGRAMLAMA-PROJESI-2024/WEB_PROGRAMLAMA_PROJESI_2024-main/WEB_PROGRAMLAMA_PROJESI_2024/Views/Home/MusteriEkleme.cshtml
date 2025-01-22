@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "MusteriEkleme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Musteri
+
+<form asp-action="MusteriEkleme" method="post">
+    <div class="form-group text-white">
+        <label asp-for="MusteriAdi">ADİNİZ:</label>
+        <input type="text" class="form-control" asp-for="MusteriAdi" />
+        <span class="text-danger" asp-validation-for="MusteriAdi"></span>
+    </div>
+
+    <div class="form-group text-white">
+        <label asp-for="MusteriSifre">Sifre:</label>
+        <input type="password" class="form-control" asp-for="MusteriSifre" />
+        <span class="text-danger" asp-validation-for="MusteriSifre"></span>
+    </div>
+
+    <div class="form-group text-white">
+        <label asp-for="Email">Email:</label>
+        <input type="email" class="form-control" asp-for="Email" />
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+
+    <div class="form-group text-white">
+        <label asp-for="Telefon">Telefon:</label>
+        <input type="text" class="form-control" asp-for="Telefon" />
+        <span class="text-danger" asp-validation-for="Telefon"></span>
+    </div>
+
+
+    <div class="form-group pt-3">
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    </div>
+</form>
+
