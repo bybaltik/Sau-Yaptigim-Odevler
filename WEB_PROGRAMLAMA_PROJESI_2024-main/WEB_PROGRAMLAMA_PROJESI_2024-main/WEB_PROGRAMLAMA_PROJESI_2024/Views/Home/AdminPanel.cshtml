@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "AdminPanel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center text-white">HOSGELDİN ADMİN</h1>
+<div class="container mt-5">
+    <div class="row mb-3">
+        <div class="col-12">
+            <button onclick="window.location.href='@Url.Action("RolEkleme", "Home")'" class="btn btn-primary w-100">
+                ROL EKLEMEK İÇİN TIKLAYIN
+            </button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <button onclick="window.location.href='@Url.Action("SalonEkleme", "Home")'" class="btn btn-primary w-100">
+                SALON EKLEMEK İÇİN TIKLAYIN
+            </button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <button onclick="window.location.href='@Url.Action("IslemEkleme", "Home")'" class="btn btn-primary w-100">
+                İŞLEM EKLEMEK İÇİN TIKLAYIN
+            </button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <button onclick="window.location.href='@Url.Action("CalisanEkleme", "Home")'" class="btn btn-primary w-100">
+                ÇALIŞAN EKLEMEK İÇİN TIKLAYIN
+            </button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <button onclick="window.location.href='@Url.Action("TumRandevularıGoruntule", "Home")'" class="btn btn-primary w-100">
+                TÜM RANDEVULARI GÖRÜNTÜLEMEK İÇİN TIKLAYIN
+            </button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <button onclick="window.location.href='@Url.Action("GetRandevular", "RandevuApi")'" class="btn btn-primary w-100">
+                Rest Api Görüntüle
+            </button>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-12">
+            <button onclick="window.location.href='@Url.Action("Logout", "Home")'" class="btn btn-primary w-100">
+                ÇIKIŞ YAPMAK İÇİN TIKLAYIN
+            </button>
+        </div>
+    </div>
+</div>

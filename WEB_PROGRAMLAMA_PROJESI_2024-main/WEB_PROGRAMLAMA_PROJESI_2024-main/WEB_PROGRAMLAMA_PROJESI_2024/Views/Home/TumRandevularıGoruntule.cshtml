@@ -1,0 +1,51 @@
+﻿@model List<WEB_PROGRAMLAMA_PROJESI_2024.Models.Randevu>
+
+@{
+    ViewData["Title"] = "Tüm Randevular";
+}
+
+<h2 class="text-white">Tüm Randevular</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning">
+        Henüz hiç randevu bulunmamaktadır.
+    </div>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Müşteri Adı</th>
+                <th>Çalışan</th>
+                <th>İşlem</th>
+                <th>Tarih</th>
+                <th>Saat</th>
+                <th>Onay Durumu</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var randevu in Model)
+            {
+                <tr>
+                    <td>@randevu.Musteri.MusteriAdi</td>
+                    <td>@randevu.Calisan.AdSoyad</td>
+                    <td>@randevu.Islem.IslemAdi</td>
+                    <td>@randevu.Tarih</td>
+                    <td>@randevu.SaatAraligi</td>
+                    <td>
+                        @(randevu.Onay ? "Onaylandı" : "Onay Bekliyor")
+                    </td>
+                    <td>
+                        @if (!randevu.Onay)
+                        {
+                            <a href="@Url.Action("Onayla", "Home", new { randevuId = randevu.RandevuId })" class="btn btn-success">Onayla</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

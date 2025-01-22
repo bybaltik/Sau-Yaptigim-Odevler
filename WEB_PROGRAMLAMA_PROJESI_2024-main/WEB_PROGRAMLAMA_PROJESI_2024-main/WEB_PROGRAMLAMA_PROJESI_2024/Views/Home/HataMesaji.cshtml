@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "HataMesaji";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var mesaj = TempData["HataMesaji"] as string ?? "Bir hata oluştu.";
+}
+
+<div class="container mt-5 text-center">
+    <div class="alert alert-danger" role="alert">
+        <h1 class="display-4 fw-bold">@mesaj</h1>
+        <p class="mt-4">
+            <span id="sayaç" class="fw-bold">10</span> saniye sonra
+            <a href="/Home/RandevuAlma" class="text-primary fw-bold">Randevu Alma</a> ekranına yönlendirileceksiniz.
+        </p>
+        <p>
+            <a href="/Home/RandevuAlma" class="btn btn-primary mt-3">Randevu Alma sayfasına gitmek için tıklayınız.</a>
+        </p>
+    </div>
+</div>
+
+<script>
+    let sayaç = 10; // Geri sayım başlangıcı
+    const sayaçElement = document.getElementById("sayaç");
+
+    const interval = setInterval(() => {
+        sayaç--;
+        sayaçElement.textContent = sayaç;
+
+        if (sayaç <= 0) {
+            clearInterval(interval);
+            window.location.href = "/Home/RandevuAlma"; // RandevuAlma action'ına yönlendirme
+        }
+    }, 1000); // Her saniye sayaç azalacak
+</script>
+

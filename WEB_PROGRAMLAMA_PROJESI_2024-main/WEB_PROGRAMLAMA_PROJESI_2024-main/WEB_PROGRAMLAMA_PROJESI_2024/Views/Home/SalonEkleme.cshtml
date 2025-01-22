@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "SalonEkleme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Salon
+
+
+<form asp-action="SalonEkleme" method="post">
+    <div class="form-group text-white">
+        <label asp-for="SalonAdi">Salon Adı:</label>
+        <input type="text" class="form-control" asp-for="SalonAdi" />
+        <span class="text-danger" asp-validation-for="SalonAdi"></span>
+    </div>
+
+    <div class="form-group text-white">
+        <label asp-for="Adres">Adres:</label>
+        <input type="text" class="form-control" asp-for="Adres" />
+        <span class="text-danger" asp-validation-for="Adres"></span>
+    </div>
+
+    <div class="form-group text-white">
+        <label asp-for="CalismaSaatleri">Calisma Saatleri:</label>
+        <input type="text" class="form-control" asp-for="CalismaSaatleri" />
+        <span class="text-danger" asp-validation-for="CalismaSaatleri"></span>
+    </div>
+
+
+
+    <div class="form-group pt-3">
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    </div>
+</form>
